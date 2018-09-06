@@ -31,6 +31,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hUd-H1-zve"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Buw-CG-XgZ" id="nGd-2X-XZi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xq9-q2-Y0O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
