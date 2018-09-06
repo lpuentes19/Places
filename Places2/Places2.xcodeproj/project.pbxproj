@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95478B892141BAD60007EF60 /* PlaceSelectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95478B882141BAD60007EF60 /* PlaceSelectionDelegate.swift */; };
 		9591E1D321418AB0009C31E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1D221418AB0009C31E0 /* AppDelegate.swift */; };
 		9591E1D821418AB0009C31E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D621418AB0009C31E0 /* Main.storyboard */; };
 		9591E1DA21418AB1009C31E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D921418AB1009C31E0 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95478B882141BAD60007EF60 /* PlaceSelectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSelectionDelegate.swift; sourceTree = "<group>"; };
 		9591E1CF21418AB0009C31E0 /* Places2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9591E1D221418AB0009C31E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9591E1D721418AB0009C31E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				9591E1FA21419CEA009C31E0 /* PlacesPresenter.swift */,
+				95478B882141BAD60007EF60 /* PlaceSelectionDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				9591E1EB21419551009C31E0 /* Place.swift in Sources */,
 				9591E1F321419775009C31E0 /* MapViewController.swift in Sources */,
 				9591E1F121419747009C31E0 /* CreateNewPlacesViewController.swift in Sources */,
+				95478B892141BAD60007EF60 /* PlaceSelectionDelegate.swift in Sources */,
 				9591E1F7214197E8009C31E0 /* VisitedPlacesViewController.swift in Sources */,
 				9591E1F52141978F009C31E0 /* PlacesTableViewController.swift in Sources */,
 			);

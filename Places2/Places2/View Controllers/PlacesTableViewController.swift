@@ -10,6 +10,7 @@ import UIKit
 
 class PlacesTableViewController: UITableViewController {
 
+    weak var delegate: PlaceSelectionDelegate?
     var placeController: PlaceController?
     
     override func viewDidLoad() {
@@ -36,5 +37,10 @@ class PlacesTableViewController: UITableViewController {
 
         return cell
     }
-
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let place = placeController?.places[indexPath.row] else { return }
+        delegate?.placeWasSelected(place: place)
+    }
 }

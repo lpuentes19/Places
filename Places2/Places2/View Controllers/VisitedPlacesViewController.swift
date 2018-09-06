@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VisitedPlacesViewController: UIViewController, PlacesPresenter {
+class VisitedPlacesViewController: UIViewController, PlacesPresenter, PlaceSelectionDelegate {
 
     var placeController: PlaceController?
     var placesTableViewController: PlacesTableViewController?
@@ -19,6 +19,10 @@ class VisitedPlacesViewController: UIViewController, PlacesPresenter {
 
     }
     
+    func placeWasSelected(place: Place) {
+        mapViewController?.location = place.location
+    }
+    
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlacesTable" {
@@ -26,6 +30,7 @@ class VisitedPlacesViewController: UIViewController, PlacesPresenter {
             guard let placesTVC = segue.destination as? PlacesTableViewController else { return }
             
             placesTVC.placeController = placeController
+            placesTVC.delegate = self
             placesTableViewController = placesTVC
             
         } else if segue.identifier == "MapView" {
