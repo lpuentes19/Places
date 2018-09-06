@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,35 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2B-aA-gzM">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f2B-aA-gzM">
                                 <rect key="frame" x="16" y="206" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="UiH-g7-JJa"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oal-7T-Nmv">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Latitude from -90 to 90" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oal-7T-Nmv">
                                 <rect key="frame" x="16" y="244" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="OQj-Hc-K9w"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitude from -180 to 180" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auz-9F-MyU">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Longitude from -180 to 180" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auz-9F-MyU">
                                 <rect key="frame" x="16" y="282" width="343" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="tr9-q1-5iI"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIm-Xa-Bai">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIm-Xa-Bai">
                                 <rect key="frame" x="16" y="320" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <state key="normal" title="Save Places">
@@ -56,21 +50,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.75406885150000003" green="0.75408679249999999" blue="0.75407713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AIm-Xa-Bai" secondAttribute="bottom" constant="317" id="1VL-VR-hhK"/>
-                            <constraint firstItem="oal-7T-Nmv" firstAttribute="trailing" secondItem="auz-9F-MyU" secondAttribute="trailing" id="5Fj-Co-Me6"/>
-                            <constraint firstItem="f2B-aA-gzM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7ch-82-zxc"/>
-                            <constraint firstItem="oal-7T-Nmv" firstAttribute="leading" secondItem="auz-9F-MyU" secondAttribute="leading" id="NN9-5c-6fE"/>
-                            <constraint firstItem="AIm-Xa-Bai" firstAttribute="top" secondItem="auz-9F-MyU" secondAttribute="bottom" constant="8" symbolic="YES" id="Sbr-fE-Unh"/>
-                            <constraint firstItem="f2B-aA-gzM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="186" id="YcZ-K6-DDm"/>
-                            <constraint firstItem="auz-9F-MyU" firstAttribute="top" secondItem="oal-7T-Nmv" secondAttribute="bottom" constant="8" symbolic="YES" id="dCf-uZ-jcN"/>
-                            <constraint firstItem="f2B-aA-gzM" firstAttribute="trailing" secondItem="oal-7T-Nmv" secondAttribute="trailing" id="dnI-n4-fvr"/>
-                            <constraint firstItem="f2B-aA-gzM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fYb-i5-vpy"/>
-                            <constraint firstItem="auz-9F-MyU" firstAttribute="leading" secondItem="AIm-Xa-Bai" secondAttribute="leading" id="i6X-Ey-egW"/>
-                            <constraint firstItem="auz-9F-MyU" firstAttribute="trailing" secondItem="AIm-Xa-Bai" secondAttribute="trailing" id="neG-yI-uWN"/>
-                            <constraint firstItem="f2B-aA-gzM" firstAttribute="leading" secondItem="oal-7T-Nmv" secondAttribute="leading" id="uKK-zJ-SJ1"/>
-                            <constraint firstItem="oal-7T-Nmv" firstAttribute="top" secondItem="f2B-aA-gzM" secondAttribute="bottom" constant="8" symbolic="YES" id="zeZ-lU-Rwd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Location" id="cxr-1e-Oew"/>
@@ -79,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Places-->
         <scene sceneID="P36-9l-arh">
             <objects>
                 <viewController id="8uo-Ca-wyR" sceneMemberID="viewController">
@@ -105,6 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3vQ-pk-NwR"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Places" id="K4l-uu-z1Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alc-cn-ebU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +117,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Yr2-Pe-6c1"/>
+                        <segue destination="8uo-Ca-wyR" kind="relationship" relationship="viewControllers" id="HhB-Ce-mhV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIy-ei-bdL" userLabel="First Responder" sceneMemberID="firstResponder"/>
