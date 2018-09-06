@@ -20,6 +20,7 @@
 		9591E1F52141978F009C31E0 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F42141978F009C31E0 /* PlacesTableViewController.swift */; };
 		9591E1F7214197E8009C31E0 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F6214197E8009C31E0 /* VisitedPlacesViewController.swift */; };
 		9591E1F921419948009C31E0 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F821419948009C31E0 /* PlaceController.swift */; };
+		9591E1FB21419CEA009C31E0 /* PlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1FA21419CEA009C31E0 /* PlacesPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9591E1F42141978F009C31E0 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		9591E1F6214197E8009C31E0 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
 		9591E1F821419948009C31E0 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
+		9591E1FA21419CEA009C31E0 /* PlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				9591E1D121418AB0009C31E0 /* Places2 */,
 				9591E1E521418C32009C31E0 /* Storyboards */,
+				9591E1E421418C29009C31E0 /* Resources */,
 				9591E1D021418AB0009C31E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,7 +74,7 @@
 		9591E1D121418AB0009C31E0 /* Places2 */ = {
 			isa = PBXGroup;
 			children = (
-				9591E1E421418C29009C31E0 /* Resources */,
+				9591E1FC21419CFE009C31E0 /* Protocols */,
 				9591E1EF21419709009C31E0 /* View Controllers */,
 				9591E1EC2141955A009C31E0 /* Model */,
 			);
@@ -118,6 +121,14 @@
 				9591E1F6214197E8009C31E0 /* VisitedPlacesViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9591E1FC21419CFE009C31E0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9591E1FA21419CEA009C31E0 /* PlacesPresenter.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9591E1EE21419701009C31E0 /* PlacesTabBarController.swift in Sources */,
+				9591E1FB21419CEA009C31E0 /* PlacesPresenter.swift in Sources */,
 				9591E1F921419948009C31E0 /* PlaceController.swift in Sources */,
 				9591E1D321418AB0009C31E0 /* AppDelegate.swift in Sources */,
 				9591E1EB21419551009C31E0 /* Place.swift in Sources */,
@@ -346,7 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
-				INFOPLIST_FILE = "$(SRCROOT)/Places2/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +376,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
-				INFOPLIST_FILE = "$(SRCROOT)/Places2/Resources/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
