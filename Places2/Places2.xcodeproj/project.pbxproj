@@ -19,6 +19,7 @@
 		9591E1F321419775009C31E0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F221419775009C31E0 /* MapViewController.swift */; };
 		9591E1F52141978F009C31E0 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F42141978F009C31E0 /* PlacesTableViewController.swift */; };
 		9591E1F7214197E8009C31E0 /* VisitedPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F6214197E8009C31E0 /* VisitedPlacesViewController.swift */; };
+		9591E1F921419948009C31E0 /* PlaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1F821419948009C31E0 /* PlaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		9591E1F221419775009C31E0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9591E1F42141978F009C31E0 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		9591E1F6214197E8009C31E0 /* VisitedPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitedPlacesViewController.swift; sourceTree = "<group>"; };
+		9591E1F821419948009C31E0 /* PlaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9591E1EA21419551009C31E0 /* Place.swift */,
+				9591E1F821419948009C31E0 /* PlaceController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9591E1EE21419701009C31E0 /* PlacesTabBarController.swift in Sources */,
+				9591E1F921419948009C31E0 /* PlaceController.swift in Sources */,
 				9591E1D321418AB0009C31E0 /* AppDelegate.swift in Sources */,
 				9591E1EB21419551009C31E0 /* Place.swift in Sources */,
 				9591E1F321419775009C31E0 /* MapViewController.swift in Sources */,
