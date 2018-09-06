@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		9591E1D321418AB0009C31E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1D221418AB0009C31E0 /* AppDelegate.swift */; };
-		9591E1D521418AB0009C31E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591E1D421418AB0009C31E0 /* ViewController.swift */; };
 		9591E1D821418AB0009C31E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D621418AB0009C31E0 /* Main.storyboard */; };
 		9591E1DA21418AB1009C31E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D921418AB1009C31E0 /* Assets.xcassets */; };
 		9591E1DD21418AB1009C31E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1DB21418AB1009C31E0 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		9591E1CF21418AB0009C31E0 /* Places2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9591E1D221418AB0009C31E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9591E1D421418AB0009C31E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9591E1D721418AB0009C31E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9591E1D921418AB1009C31E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9591E1DC21418AB1009C31E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,29 @@
 		9591E1D121418AB0009C31E0 /* Places2 */ = {
 			isa = PBXGroup;
 			children = (
+				9591E1E521418C32009C31E0 /* Storyboards */,
+				9591E1E421418C29009C31E0 /* Resources */,
+			);
+			path = Places2;
+			sourceTree = "<group>";
+		};
+		9591E1E421418C29009C31E0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				9591E1D221418AB0009C31E0 /* AppDelegate.swift */,
-				9591E1D421418AB0009C31E0 /* ViewController.swift */,
-				9591E1D621418AB0009C31E0 /* Main.storyboard */,
 				9591E1D921418AB1009C31E0 /* Assets.xcassets */,
 				9591E1DB21418AB1009C31E0 /* LaunchScreen.storyboard */,
 				9591E1DE21418AB1009C31E0 /* Info.plist */,
 			);
-			path = Places2;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9591E1E521418C32009C31E0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9591E1D621418AB0009C31E0 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +148,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9591E1D521418AB0009C31E0 /* ViewController.swift in Sources */,
 				9591E1D321418AB0009C31E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
-				INFOPLIST_FILE = Places2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Places2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +312,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H9L7P6ZCN6;
-				INFOPLIST_FILE = Places2/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Places2/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
