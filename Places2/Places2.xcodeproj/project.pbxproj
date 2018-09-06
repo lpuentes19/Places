@@ -11,6 +11,8 @@
 		9591E1D821418AB0009C31E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D621418AB0009C31E0 /* Main.storyboard */; };
 		9591E1DA21418AB1009C31E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1D921418AB1009C31E0 /* Assets.xcassets */; };
 		9591E1DD21418AB1009C31E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1DB21418AB1009C31E0 /* LaunchScreen.storyboard */; };
+		9591E1E721418FDF009C31E0 /* MapView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1E621418FDF009C31E0 /* MapView.storyboard */; };
+		9591E1E9214190FF009C31E0 /* PlacesTable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9591E1E8214190FF009C31E0 /* PlacesTable.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		9591E1D921418AB1009C31E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9591E1DC21418AB1009C31E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9591E1DE21418AB1009C31E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9591E1E621418FDF009C31E0 /* MapView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapView.storyboard; sourceTree = "<group>"; };
+		9591E1E8214190FF009C31E0 /* PlacesTable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlacesTable.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +67,6 @@
 			children = (
 				9591E1D221418AB0009C31E0 /* AppDelegate.swift */,
 				9591E1D921418AB1009C31E0 /* Assets.xcassets */,
-				9591E1DB21418AB1009C31E0 /* LaunchScreen.storyboard */,
 				9591E1DE21418AB1009C31E0 /* Info.plist */,
 			);
 			path = Resources;
@@ -73,6 +76,9 @@
 			isa = PBXGroup;
 			children = (
 				9591E1D621418AB0009C31E0 /* Main.storyboard */,
+				9591E1E621418FDF009C31E0 /* MapView.storyboard */,
+				9591E1E8214190FF009C31E0 /* PlacesTable.storyboard */,
+				9591E1DB21418AB1009C31E0 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9591E1DD21418AB1009C31E0 /* LaunchScreen.storyboard in Resources */,
+				9591E1E9214190FF009C31E0 /* PlacesTable.storyboard in Resources */,
+				9591E1E721418FDF009C31E0 /* MapView.storyboard in Resources */,
 				9591E1DA21418AB1009C31E0 /* Assets.xcassets in Resources */,
 				9591E1D821418AB0009C31E0 /* Main.storyboard in Resources */,
 			);
